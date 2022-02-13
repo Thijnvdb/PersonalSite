@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    @apply bg-theme-muted-900;
+  }
+
+  .divider {
+    text-align:center;
+    @apply text-4xl;
+    @apply py-2;
+    @apply text-theme-muted-50;
+    @apply w-5/6;
+    @apply my-8;
+    @apply border-b-2;
+    @apply border-theme-muted-700;
+  }
+
+  .navigation {
+    @apply bg-theme-primary-900;
+    @apply text-theme-muted-900;
+    a {
+      @apply bg-theme-primary-300;
+      @apply hover:bg-theme-primary-400
+    }
+
+    &.dark {
+      @apply bg-theme-dark-900;
+      @apply text-theme-primary-50;
+      a {
+        @apply bg-theme-primary-600;
+        @apply hover:bg-theme-primary-500
+      }
+    }
+
+    &.muted {
+      @apply bg-theme-muted-900;
+      @apply text-theme-muted-50;
+      a {
+        @apply bg-theme-muted-700;
+        @apply hover:bg-theme-muted-600
+      }
+    }
+  }
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
