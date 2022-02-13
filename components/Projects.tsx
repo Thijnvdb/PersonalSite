@@ -2,21 +2,21 @@ import { ReactElement, useEffect, useState } from "react"
 import DefaultLayout from "../layouts/DefaultLayout"
 import styles from "../styles/Projects.module.scss";
 
-interface project {
+export interface project {
     name:string,
-    url:string
+    html_url:string,
+    description:string
 }
 
 export default function Projects({}) {
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState<project[]>([]);
 
     useEffect(() => {
         getProjects();
     }, [])
     
     async function getProjects() {
-        const res: Set<project> = await (await fetch("https://api.github.com/users/thijnvdb/repos")).json();
-        console.log(res);
+        const res = await (await fetch("https://api.github.com/users/thijnvdb/repos")).json();
         setProjects(res);
     }
     
