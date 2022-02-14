@@ -28,7 +28,7 @@ export default function Projects({}) {
             {
                 projects.map((project,i) => <a key={"project"+i} href={project.html_url} className={"container transition-all hover:scale-105 bg-theme-muted-800 hover:bg-theme-muted-700 w-full col-span-1 row-span-1 rounded p-4 transitions-all " + styles.project}>
                     <h1 className="text-theme-muted-50 font-bold text-2xl">{project.name}</h1>
-                    <p className="text-theme-muted-400">{project.description || "no description provided"}</p>
+                    <p className="text-theme-muted-400 font-semibold">{project.description || "no description provided"}</p>
                 </a>)
             }
         </div>

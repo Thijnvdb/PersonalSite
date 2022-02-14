@@ -10,7 +10,7 @@ export default function Divider({title, hidden = false}:dividerProps) {
     <a id={title} className={'capitalize flex items-center justify-center select-none h-[10vh]'}/>
     {
       !hidden &&
-      <h1 className='text-4xl h-[8vh] capitalize text-theme-muted-50 w-5/6 text-center border-theme-muted-700 border-b-2'>{title}</h1>
+      <h1 className='text-4xl font-light h-[8vh] capitalize text-theme-muted-50 w-5/6 text-center border-theme-muted-700 border-b-2'>{title}</h1>
     }
   </div>
   )
