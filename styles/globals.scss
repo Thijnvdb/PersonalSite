@@ -41,6 +41,15 @@
       }
     }
 
+    &.transparent {
+      @apply bg-transparent;
+      @apply text-theme-primary-50;
+      a {
+        @apply bg-theme-muted-900;
+        @apply hover:bg-theme-muted-800;
+      }
+    }
+
     &.muted {
       @apply bg-theme-muted-900;
       @apply text-theme-muted-50;
@@ -61,3 +70,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+// a.anchor:before { 
+//   display: block; 
+//   content: " "; 
+//   height: 8vh;      /* Give height of your fixed element */
+//   //margin-top: 8vh; /* Give negative margin of your fixed element */  	
+//   visibility: hidden; 
+// }

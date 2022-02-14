@@ -30,7 +30,8 @@ module.exports = {
         'totorro':"url('/totorro.jpg')",
         'flower':"url('/flower.jpg')",
         'sun':"url('/bg.jpg')",
-        'fog':"url('/fog.jpg')"
+        'fog':"url('/fog.jpg')",
+        'forest':"url('/forest.jpg')"
       },
       borderColor: {
         theme: theme
