@@ -2,7 +2,7 @@
 
 }
 
-.project {
+.enter {
     @for $i from 1 through 20{    
         &:nth-child(#{$i}) {
             animation-delay: calc(100ms * $i);

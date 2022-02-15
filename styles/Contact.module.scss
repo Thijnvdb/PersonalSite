@@ -1,0 +1,4 @@
+.link { 
+    @apply w-1/3 text-center cursor-pointer text-theme-muted-50 bg-theme-muted-800 rounded-2xl;
+    @apply m-2 text-2xl p-4 hover:scale-105 transition-all hover:bg-theme-muted-700;
+}

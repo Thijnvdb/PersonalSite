@@ -20,7 +20,7 @@ export default function LandingNavigation() {
             <Link href="#links">
                 <a className={tag}>Links</a>
             </Link>
-            <Link href="#projects">
+            <Link href="#side_projects">
                 <a className={tag}>Projects</a>
             </Link>
             <Link href="#skills">
