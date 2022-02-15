@@ -1,23 +1,19 @@
-import Image from 'next/image';
-import React, { ReactElement, ReactNode } from 'react';
-import { HomeIcon, ChevronDoubleDownIcon, SparklesIcon } from '@heroicons/react/outline'
-import Link from 'next/link';
-import Navigation from '../components/Navigation';
+import React, { ReactNode } from 'react';
+import { ChevronDoubleDownIcon } from '@heroicons/react/outline'
 import LandingNavigation from '../components/LandingNavigation';
 
 
 interface LandingProps {
     children?: ReactNode
-    image?: StaticImageData,
     title?: string
 }
 
-export default function LandingLayout({children, image, title}: LandingProps) {
+export default function LandingLayout({children, title}: LandingProps) {
     return (
     <>
         <LandingNavigation/>
         <header className='relative h-screen bg-fixed bg-cover bg-forest bg-bottom w-full flex flex-col items-center justify-around'>
-            <h1 className='text-theme-muted-100 text-6xl font-light z-20'>{title}</h1>
+            <h1 className='text-theme-muted-100 text-6xl font-light z-20 ml-4'>{title}</h1>
             <span className='absolute mx-auto top-2/3 animate-bounce z-20'>
                 <a href='#page'>
                     <ChevronDoubleDownIcon className='text-theme-muted-200 opacity-50 hover:opacity-100 h-12 w-12 hover:text-theme-muted-100 transition-all cursor-pointer'/>

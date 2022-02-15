@@ -16,7 +16,7 @@ export default function LandingNavigation() {
     },[])
 
     return (
-        <nav className={`w-full z-50 h-[8vh] fixed top-0 left-0 flex items-center justify-center duration-200 transition-all ${visible && 'bg-theme-muted-900 shadow-lg'}`}>
+        <nav className={`w-[100vw] z-50 h-[8vh] fixed top-0 left-0 flex items-center justify-center duration-200 transition-all ${visible && 'bg-theme-muted-900 shadow-lg'}`}>
             <Link href="#links">
                 <a className={tag}>Links</a>
             </Link>
