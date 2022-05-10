@@ -20,12 +20,12 @@ export default function Links() {
             links.map((e,i) => (
             <a href={e.link} className='cursor-pointer row-span-1 col-span-1 transition-all 
             hover:scale-105 duration-300 rounded-xl h-32 flex justify-evenly items-center
-            bg-gradient-to-tl to-theme-primary-600 from-theme-secondary-600 shadow-md
-            hover:hue-rotate-15 py-2
+            bg-theme-muted-800 shadow-md
+            hover:hue-rotate-5 py-2
             '>
-                <FontAwesomeIcon className='text-theme-primary-50 opacity-75 h-full' size={"1x"} icon={e.icon}/>
+                <FontAwesomeIcon className='text-theme-secondary-400 opacity-75 h-full' size={"1x"} icon={e.icon}/>
                 {/* <i className={`${e.icon.prefix} ${e.icon.iconName}`}></i> */}
-                <span className='text-center mr-8 text-xl font-semibold text-theme-primary-50 opacity-75'>
+                <span className='text-center mr-8 text-xl font-semibold text-theme-secondary-400 opacity-75'>
                 {e.name}
                 </span>
             </a>

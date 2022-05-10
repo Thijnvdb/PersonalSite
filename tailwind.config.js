@@ -8,7 +8,7 @@ const colors = require('tailwindcss/colors');
 
 const theme = {
   primary: colors.amber,
-  secondary: colors.red,
+  secondary: colors.orange,
   muted: colors.stone,
   dark: colors.neutral
 }
@@ -34,6 +34,7 @@ module.exports = {
         theme: theme
       },
       backgroundImage: {
+        'mnt':"url('/mnt.jpg')",
         'fog':"url('/fog.jpg')",
         'forest':"url('/forest.jpg')"
       },
